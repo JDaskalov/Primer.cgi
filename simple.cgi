@@ -29,7 +29,6 @@ echo "Content-type: text/html"
 echo ""
 echo "Begin"
 echo ""
-printenv
 
 /usr/bin/curl -o /tmp/csun  http://www.csun.edu
 cat /tmp/csun
