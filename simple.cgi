@@ -28,9 +28,13 @@ echo "Content-type: text/html"
 
 echo ""
 echo "Begin"
+echo ""
+
+/usr/bin/curl -o /tmp/csun  http://www.csun.edu
+cat /tmp/csun
 
 if [ -n "${QUERY_STRING}" ] ; then 
-   cat  ./${QUERY_STRING}
+   env
 fi
 
 # Read the body -- if it is a post
