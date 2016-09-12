@@ -27,7 +27,7 @@ echo "X-Cit-160: hello again steve!"
 echo "Content-type: text/html"
 
 echo ""
-echo "Begin"
+echo "This is where it all starts!"
 echo ""
 
 /usr/bin/curl -o /tmp/csun  http://www.csun.edu
