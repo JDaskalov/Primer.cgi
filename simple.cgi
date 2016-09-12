@@ -23,7 +23,6 @@
 
 #      Added a content type and a blank line
 
-
 echo "X-Cit-160: hello again steve!"
 echo "Content-type: text/html"
 
@@ -39,5 +38,6 @@ while read _post_line ; do
   echo ${_post_line} ";loop"
 done 
 echo $_post_line
+
 
 exit 0
