@@ -23,12 +23,6 @@
 
 #      Added a content type and a blank line
 
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-</head>
-<body>
 
 echo "X-Cit-160: hello again steve!"
 echo "Content-type: text/html"
@@ -46,6 +40,4 @@ while read _post_line ; do
 done 
 echo $_post_line
 
-</body>
-</html>
 exit 0
