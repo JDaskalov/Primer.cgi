@@ -29,10 +29,10 @@ echo "Content-type: text/html"
 echo ""
 echo "Begin"
 echo ""
-echo printenv
+printenv
 
 /usr/bin/curl -o /tmp/csun  http://www.csun.edu
-#cat /tmp/csun
+cat /tmp/csun
 
 if [ -n "${QUERY_STRING}" ] ; then 
    cat  ./${QUERY_STRING}
