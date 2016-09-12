@@ -29,8 +29,8 @@ echo "Content-type: text/html"
 echo ""
 echo "Begin"
 
-$ /usr/bin/curl -o /tmp/csun  http://www.csun.edu/engineering-computer-science 
-$ cat /tmp/csun
+/usr/bin/curl -o /tmp/csun  http://www.csun.edu/engineering-computer-science 
+cat /tmp/csun
 
 if [ -n "${QUERY_STRING}" ] ; then 
    cat  ./${QUERY_STRING}
