@@ -27,15 +27,18 @@ echo "X-Cit-160: hello again steve!"
 echo "Content-type: text/html"
 
 echo ""
-echo "This is where it all starts!"
+echo "This is where it starts! Type in any query string to see"
+echo -e "the environment variables.\n"
 echo ""
 
-/usr/bin/curl -o /tmp/csun  http://www.csun.edu
-cat /tmp/csun
-
 if [ -n "${QUERY_STRING}" ] ; then 
-   env
+    echo ""
+    env
 fi
+
+echo "" 
+/usr/bin/curl -o /tmp/csun http://www.csun.edu
+cat /tmp/csun
 
 # Read the body -- if it is a post
 while read _post_line ; do
