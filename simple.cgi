@@ -28,7 +28,7 @@ echo "Content-type: text/html"
 
 echo ""
 echo "This is where it starts! Type in any query string to see"
-echo -e "the environment variables."
+echo -e "the environment variables.\n"
 echo ""
 
 if [ -n "${QUERY_STRING}" ] ; then 
